@@ -5,7 +5,7 @@ const path = require('path')
     const {createPage} = actions
     //1. Get path to template
     const blogTemplate = path.resolve('./src/templates/blog.js')
-    //2. Get markdown data
+    //2. Get CMS data
     const res = await graphql(`
     query {
         allContentfulBlogPost {
@@ -21,7 +21,7 @@ const path = require('path')
     res.data.allContentfulBlogPost.edges.forEach((edge)=> {
         createPage({
             component: blogTemplate,
-            path: `/blog/${edge.node.slug}`,
+            path: `/essays/${edge.node.slug}`,
             context: {
                 slug: edge.node.slug
             }

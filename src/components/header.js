@@ -15,28 +15,25 @@ const Header = () => {
 
     return(
         <header className={headerStyles.header}>
-            <h1>
+            <nav>
+                <ul className={headerStyles.navList}>
+                    <li>
+                        <Link to="/essays" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>ESSAYS</Link>
+                    </li>
+                    <li>
+                        <Link to="/design" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>DESIGNS</Link>
+                    </li>
+                    <li>
+                        <Link to="/about" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>ABOUT</Link>
+                    </li>
+                </ul>
+            </nav>
+            <h1 className={headerStyles.mainLogo}>
                 <Link to="/" className={headerStyles.title}>
                     {/* site title goes here */}
                     {data.site.siteMetadata.title}
                 </Link>
             </h1>
-            <nav>
-                <ul className={headerStyles.navList}>
-                    <li>
-                        <Link to="/" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Blog</Link>
-                    </li>
-                    <li>
-                        <Link to="/about" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>About</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Contact</Link>
-                    </li>
-                </ul>
-            </nav>
         </header>
     )
 }

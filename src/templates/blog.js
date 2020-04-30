@@ -29,6 +29,7 @@ const Blog = (props) => {
         }
     }
 
+    // the actual layout is here
     return (
         <Layout>
             <Head title={props.data.contentfulBlogPost.title}/>
@@ -36,6 +37,7 @@ const Blog = (props) => {
             <p>{props.data.contentfulBlogPost.publishedDate}</p>
             <hr/>
             {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+            <hr/>
         </Layout>
     )
 }

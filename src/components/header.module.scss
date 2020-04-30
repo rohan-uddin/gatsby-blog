@@ -8,17 +8,24 @@
     font-size: 3rem;
 }
 
+.main-logo {
+    display: flex;
+    justify-content: center;
+}
+
 .nav-list {
     display: flex;
     list-style-type: none;
     margin: 0;
+    justify-content: center;
 }
 
 .nav-item {
     text-decoration: none;
     color: #999999;
     font-size: 0.9rem;
-    margin-right: 1.3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .nav-item:hover{
