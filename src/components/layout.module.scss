@@ -1,4 +1,10 @@
+/* The 'global' style sheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap');
+
 .container {
+    font-family: 'Alegreya Sans', sans-serif;
     margin: 0 auto;
     max-width: 750px;
     padding: 1rem;
@@ -10,4 +16,17 @@
 
 .content {
     flex-grow: 1;
+}
+
+a {
+    color: black;
+}
+
+p {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+h1, h2, h3 {
+    font-family: 'Overpass', system-ui, sans-serif;
 }
