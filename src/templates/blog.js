@@ -24,7 +24,8 @@ const Blog = (props) => {
             "embedded-asset-block": (node) => {
                 const alt = node.data.target.fields.title["en-US"]
                 const url = node.data.target.fields.file["en-US"].url
-                return <img alt={alt} src={url}/>
+                return <img alt={alt} src={url} style="display: block; margin-left: auto;
+                margin-right: auto;"/>
             }
         }
     }
