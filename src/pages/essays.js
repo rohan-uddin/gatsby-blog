@@ -19,6 +19,15 @@ const BlogPage = () => {
               title
               slug
               publishedDate (formatString: "ddd, MMMM Do YYYY")
+              imageThumbnail {
+                title
+                file {
+                  url
+                }
+              }
+              description {
+                description
+              }
             }
           }
         }
@@ -32,12 +41,25 @@ const BlogPage = () => {
             <ol className={blogStyles.posts}>
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
-                        <li className={blogStyles.post}>
+                      <li className={blogStyles.post}>
                         <Link to={`/essays/${edge.node.slug}`}>
+
+                        <div className={blogStyles.mainRow}>
+
+                          <div className={blogStyles.imgContainer}>
+                            <img src={edge.node.imageThumbnail.file.url} alt={edge.node.imageThumbnail.title}></img>
+                          </div>
+
+                          <div className={blogStyles.content}>
                             <h2>{edge.node.title}</h2>
-                            <p>{edge.node.publishedDate}</p> 
+                            <br></br>
+                            <p className={blogStyles.desc}>{edge.node.description.description}</p>
+                          </div>
+                          
+                        </div>
+
                         </Link>
-                        </li>
+                      </li>
                     )
                 })}
             </ol>

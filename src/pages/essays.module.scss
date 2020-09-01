@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Sentinel Light";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Sentinel-Light.otf") format("opentype");
+    font-display: swap;
+}
+
 .posts {
     list-style-type: none;
     margin: 0;
@@ -25,7 +33,28 @@
     p {
         color: #777777;
         font-size: 0.8rem;
-        font-style: italic;
+        font-family: 'Gotham Narrow Book';
+        font-weight: 300;
+    }
+    img {
+        width: 250px;
+    }
+
+    .mainRow {
+        display: flex;
+    }
+
+    .imgContainer {
+        flex: 0 0 40%;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    .desc {
+        font-size: 1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif
     }
 }
 
