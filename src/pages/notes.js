@@ -9,7 +9,7 @@ const AboutPage = () => {
             <Head title="About"/>
             <h1>Hey!</h1>
             <p>You've stumbled upon my braindump. Here you'll find small notes on the media I consume.</p>
-            <p>This is different from the Essays, which are structured writing projects. These notes are more like breadcrumbs - ideas that may lead somewhere, or maybe not.</p>
+            <p>This is different from the Essays, which are structured writing projects. This section is inspired by the work of Dr. Cosma Shalizi on <a href="http://bactra.org/notebooks/">bactra.org</a>.</p>
         </Layout>
     )
 }
