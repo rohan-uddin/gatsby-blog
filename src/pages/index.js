@@ -24,7 +24,7 @@ const IndexPage = () => {
 
             <h3>Writing</h3>
             <p>I currently write occasional personal essays <Link to="/essays">here</Link>. Any interesting topic is fair game.</p>
-            <p>This year I started a publication called Obsidian with my best friend Allahyar Rehman. We cover topics in business, equity markets and other tangential topics that pique our interest. I'm very excited to be a part of this, and even though there's a lot of stuff that needs to be done, I'm up for the challenge.</p>
+            <p>This year I started a publication called <a href="https://obsidian.substack.com/p/introducing-obsidian">Obsidian</a> with my partner-in-crime Allahyar Rehman. We cover topics in business, equity markets and other tangential topics that pique our interest. I'm very excited to be a part of this, and even though there's a lot of stuff that needs to be done, I'm up for the challenge.</p>
 
             <h3>Consulting</h3>
             <p>In 2020, along with three other amazing partners I was part of a tiny consulting group called <a href="https://darkhorseconsultants.com/">Dark Horse</a>. We worked directly with founders and product leaders and helped them in marketing, sales, operational strategy and financial due-diligence. Our clients were based in Vancouver and Seattle.</p>
@@ -32,7 +32,7 @@ const IndexPage = () => {
             
 
             <h3>Projects</h3>
-            <p>I occasionally build cool stuff as a way to experiment with new technologies. You can view some of these experiments <Link to="/projects">here</Link>. (Note: currently a work in progress)</p>
+            <p>I occasionally build cool stuff as a way to experiment with new technologies. You can view some of these experiments <a href="https://github.com/rohan-uddin?tab=repositories">here</a>.</p>
 
             <hr></hr>
             <p>You can follow me on <a href="https://twitter.com/m_rohan_uddin">Twitter</a> and connect with me on <a href="https://www.linkedin.com/in/rohan-uddin/">LinkedIn</a>.</p>
